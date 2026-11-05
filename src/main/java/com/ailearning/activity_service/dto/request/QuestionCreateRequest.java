@@ -24,6 +24,8 @@ public record QuestionCreateRequest(
         @Positive(message = "Display order must be positive")
         Integer displayOrder,
 
+        String metadataJson,
+
         @Valid
         List<OptionCreateRequest> options,
 

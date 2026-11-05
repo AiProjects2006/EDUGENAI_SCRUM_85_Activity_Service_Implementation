@@ -14,6 +14,10 @@ import java.util.List;
 @Builder
 public class ActivityGenerationResponse {
 
+    private Long activityId;
+
+    private Long moduleId;
+
     private String title;
 
     private String description;

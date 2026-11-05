@@ -1,5 +1,6 @@
 package com.ailearning.activity_service.dto.request;
 
+import com.ailearning.activity_service.enums.ActivityStatus;
 import com.ailearning.activity_service.enums.ActivityType;
 import com.ailearning.activity_service.enums.DifficultyLevel;
 import com.ailearning.activity_service.enums.GradeLevel;
@@ -35,6 +36,8 @@ public record ActivityCreateRequest(
 
         @Positive(message = "Time limit must be positive")
         Integer timeLimitMinutes,
+
+        ActivityStatus status,
 
         @NotEmpty(message = "At least one question is required")
         @Valid

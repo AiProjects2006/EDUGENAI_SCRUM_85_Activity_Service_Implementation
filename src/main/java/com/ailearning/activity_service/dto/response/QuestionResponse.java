@@ -2,6 +2,7 @@ package com.ailearning.activity_service.dto.response;
 
 import lombok.*;
 import java.util.List;
+import java.util.Map;
 
 @Getter
 @Setter
@@ -26,6 +27,20 @@ public class QuestionResponse {
 
     private String icon;
 
+    private String scenario;
+
+    private List<String> keywords;
+
+    private List<String> solutionSteps;
+
+    private List<Map<String, Object>> leftItems;
+
+    private List<Map<String, Object>> rightItems;
+
+    private Map<String, String> matchingAnswers;
+
+    private String sortMode;
+
     private List<String> categories;
 
     private List<Object> items;
@@ -33,6 +48,12 @@ public class QuestionResponse {
     private List<String> itemsToOrder;
 
     private String imageUrl;
+
+    private String imageDescription;
+
+    private String correctRegion;
+
+    private List<Map<String, Object>> regions;
 
     private String passage;
 
@@ -42,4 +63,3 @@ public class QuestionResponse {
 
     private String incorrectFeedback;
 }
-

@@ -18,5 +18,6 @@ public record QuestionDetailResponse(
         List<DropZoneDetailResponse> dropZones,
         List<DragMappingDetailResponse> dragMappings,
         List<HotspotRegionDetailResponse> hotspotRegions,
-        EssayDetailResponse essay
+        EssayDetailResponse essay,
+        String metadataJson
 ) {}
