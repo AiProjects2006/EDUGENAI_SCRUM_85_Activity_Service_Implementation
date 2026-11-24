@@ -36,6 +36,9 @@ public class Question {
     @Column(nullable = false)
     private Integer displayOrder;
 
+    @Column(columnDefinition = "TEXT")
+    private String metadataJson;
+
     @OneToMany(mappedBy = "question", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
     private List<Option> options = new ArrayList<>();
